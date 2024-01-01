@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF544C</color>
+
+
+
+    <color name="green01">#F5F88F</color>
+    <color name="green02">#C6DC4B</color>
+    <color name="green03">#779A1C</color>
+    <color name="green04">#59A020</color>
+    <color name="green05">#59A020</color>
+
+    <color name="yellow">#F0C414</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="top">#F4D35E</color>
+    <color name="bottom">#FAF0CA</color>
+
+    <color name="grey_010">#FAFAFA</color>
+    <color name="grey_020">#F5F5F5</color>
+    <color name="grey_050">#EEEEEE</color>
+    <color name="grey_070">#A1A2A5</color>
+    <color name="grey_100">#E0E0E0</color>
+    <color name="grey_200">#BDBDBD</color>
+    <color name="grey_300">#9E9E9E</color>
+    <color name="grey_400">#929292</color>
+    <color name="grey_500">#757575</color>
+    <color name="grey_600">#6C6C6C</color>
+    <color name="grey_700">#4F4F4F</color>
+    <color name="grey_800">#2E2E2E</color>
+    <color name="grey_900">#212121</color>
+
+    <color name="Orange100">#F83B01</color>
+    <color name="Orange80">#F96234</color>
+    <color name="Orange50">#FB9D80</color>
+    <color name="Orange20">#FED8CC</color>
+
+    <color name="Yellow100">#FE8800</color>
+    <color name="Yellow80">#FEA033</color>
+    <color name="Yellow50">#FEC380</color>
+    <color name="Yellow20">#FFE7CC</color>
+
+    <color name="Black100">#0B0C17</color>
+    <color name="Black80">#32354E</color>
+    <color name="Black50">#494C61</color>
+    <color name="Black20">#767989</color>
+
+    <color name="Grey100">#A4A5B0</color>
+    <color name="Grey80">#B6B7C0</color>
+    <color name="Grey50">#D1D2D7</color>
+    <color name="Grey20">#EDEDEF</color>
+</resources>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="6dp"
+        android:elevation="15dp"
+        app:cardCornerRadius="12dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/yellow"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginVertical="2dp"
+                    android:text="You Win"
+                    android:textColor="@color/white"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:fontFamily="@font/lilita_one_regular"
+                    android:letterSpacing="0.23"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/action_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginVertical="24dp"
+                android:text="Congratulation"
+                android:textColor="@color/black"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                app:fontFamily="@font/poppins_semibold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line1" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_marginVertical="12dp"
+                android:src="@drawable/award"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/action_text" />
+
+            <LinearLayout
+                android:id="@+id/line_step"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_main_bg"
+                android:layout_marginVertical="24dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/line_time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_marginVertical="12dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:text="Step"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/step_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginVertical="6dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_time"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn_main_bg"
+                android:layout_marginVertical="24dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/line_step"
+                app:layout_constraintTop_toBottomOf="@id/image">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="6dp"
+                    android:layout_marginVertical="12dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:includeFontPadding="false"
+                    android:text="Time"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/time_game"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:layout_marginVertical="6dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="00:00"
+                    android:textColor="@color/white"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/btn_new_game"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="24dp"
+                android:backgroundTint="@color/Yellow100"
+                android:fontFamily="@font/lilita_one_regular"
+                android:text="New Game"
+                app:layout_constraintTop_toBottomOf="@id/line_step"
+                app:layout_constraintStart_toStartOf="@id/line_step"
+                app:layout_constraintEnd_toEndOf="@id/line_time"
+                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:id="@+id/btn_back_game"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="@color/Yellow100"
+                android:fontFamily="@font/lilita_one_regular"
+                android:text="Home"
+                app:layout_constraintEnd_toEndOf="@id/line_time"
+                app:layout_constraintStart_toStartOf="@id/line_step"
+                app:layout_constraintTop_toBottomOf="@id/btn_new_game"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:elevation="12dp"
+                android:id="@+id/animationView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_rawRes="@raw/privileged" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

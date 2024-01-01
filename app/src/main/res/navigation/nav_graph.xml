@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="air.texnodev.puzzle15.ui.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="air.texnodev.puzzle15.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="air.texnodev.puzzle15.ui.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="air.texnodev.puzzle15.ui.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="air.texnodev.puzzle15.ui.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        tools:layout="@layout/fragment_game"
+        android:id="@+id/continueGameFragment"
+        android:name="air.texnodev.puzzle15.ui.ContinueGameFragment"
+        android:label="ContinueGameFragment" />
+</navigation>

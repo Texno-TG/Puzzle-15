@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/bg_splash"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/top"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:visibility="invisible"
+            android:id="@+id/appCompatTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_volume_off_24"
+            android:fontFamily="@font/poppins_semibold"
+            android:background="@color/transparent"
+            android:layout_marginVertical="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_marginTop="45dp"
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/app_bar"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/icon"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/name_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="@font/salwey"
+            android:text="Puzzle 15"
+            android:textColor="@color/Yellow100"
+            android:textSize="36dp"
+            android:layout_marginVertical="12dp"
+            android:textStyle="bold"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/linear1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginHorizontal="80dp"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/start_game_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="14dp"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/Yellow100"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="12dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="6dp"
+                android:id="@+id/start_game"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                app:fontFamily="@font/lilita_one_regular"
+                android:drawableStart="@drawable/baseline_play_arrow_24"
+                android:text="New Game"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:id="@+id/continue_game_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="14dp"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/Yellow100"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="12dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="6dp"
+                android:id="@+id/continue_game"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                app:fontFamily="@font/lilita_one_regular"
+                android:drawableStart="@drawable/baseline_play_arrow_24"
+                android:text="Continue"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/statistic_game_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="14dp"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/Yellow100"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="12dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="6dp"
+                android:id="@+id/statistic_game"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                app:fontFamily="@font/lilita_one_regular"
+                android:drawableStart="@drawable/baseline_insert_chart_outlined_24"
+                android:text="Statistics"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/info_game_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="14dp"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/Yellow100"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="12dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="6dp"
+                android:id="@+id/info_game"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                app:fontFamily="@font/lilita_one_regular"
+                android:drawableStart="@drawable/baseline_info_24"
+                android:text="Info"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/exit_game_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="14dp"
+            android:layout_marginVertical="8dp"
+            android:backgroundTint="@color/Orange100"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="12dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginVertical="6dp"
+                android:id="@+id/exit_game"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                app:fontFamily="@font/lilita_one_regular"
+                android:drawableStart="@drawable/baseline_logout_24"
+                android:text="Exit"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
